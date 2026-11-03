@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Numero de telefono -->
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu número de teléfono"
+        android:inputType="phone" />
+
+    <!-- Correo electronico -->
+    <EditText
+        android:id="@+id/texto_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese correo electrónico"
+        android:inputType="textEmailAddress" />
+
+    <!-- Autocompletado -->
+    <AutoCompleteTextView
+        android:id="@+id/miTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Elige una película"
+        android:completionThreshold="1" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/miSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- CheckBox -->
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción 1" />
+
+    <!-- RadioGroup -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción 1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción 2" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción 3" />
+
+    </RadioGroup>
+
+    <!-- Boton para comprobar -->
+    <Button
+        android:id="@+id/button_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Comprobar selección" />
+
+    <!-- Resultado -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aquí aparecerá el resultado" />
+
+    <!-- Texto de ejemplo -->
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Probando el TextView"
+        android:textColor="#0000FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- ToggleButton -->
+    <ToggleButton
+        android:id="@+id/miToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textOff="No Pulsado"
+        android:textOn="Pulsado" />
+
+    <!-- Imagen -->
+    <ImageButton
+        android:id="@+id/miImageButton"
+        android:layout_width="137dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Botón con imagen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img" />
+
+</LinearLayout>
